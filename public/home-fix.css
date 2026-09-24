@@ -1,0 +1,3 @@
+#electric-canvas { width: 100% !important; max-width: 100%; }
+.telegram-links { display:flex; justify-content:center; gap:10px; flex-wrap:wrap; }
+.telegram-cta { border:1px solid var(--line); background:#ffffff08; color:#e8f2eb; }

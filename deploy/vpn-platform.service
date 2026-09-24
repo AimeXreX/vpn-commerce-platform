@@ -1,0 +1,18 @@
+[Unit]
+Description=VPN Telegram Commerce Platform
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/vpn-platform
+EnvironmentFile=/var/www/vpn-platform/.env
+ExecStart=/usr/bin/node /var/www/vpn-platform/server.js
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

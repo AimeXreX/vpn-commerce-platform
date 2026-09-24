@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+  <meta name="theme-color" content="#07110d">
+  <title>فروشگاه تلگرامی VPN</title>
+  <link rel="stylesheet" href="/miniapp.css?v=20260717-1"><link rel="stylesheet" href="/miniapp-theme.css?v=20260717-1">
+  <script src="https://telegram.org/js/telegram-web-app.js?61"></script>
+  <script src="/store-i18n.js?v=20260718-6"></script><script src="/miniapp.js?v=20260718-6" defer></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div id="connection-state" class="connection-state" role="status"></div>
+  <header class="top">
+    <div class="brand"><span>P</span><div><b id="store-name">ProSySVPN</b><small><i></i> تحویل سریع و امن</small></div></div>
+    <button id="profile" class="profile" aria-label="حساب کاربری">م</button>
+  </header>
+  <main>
+    <section id="store-view" class="view active">
+      <article class="hero">
+        <div class="hero-copy"><span class="signal"><i></i><b>LIVE</b> TELEGRAM MINI APP</span><h1>اتصال بدون مرز،<br><em>در چند ثانیه.</em></h1><p>پلن را انتخاب کن، پرداخت را انجام بده و لینک اتصال را همین‌جا تحویل بگیر.</p><div class="trust"><span>✓ تحویل آنی</span><span>✓ پرداخت امن</span><span>✓ پشتیبانی واقعی</span></div></div>
+        <div class="mini-portal" aria-hidden="true"><i></i><span>P</span></div>
+      </article>
+      <div class="section-title"><div><small>پلن‌های فعال</small><h2>انتخاب اشتراک</h2></div><span id="plan-count"></span></div>
+      <section id="plans" class="plans"><div class="skeleton"></div><div class="skeleton"></div></section>
+    </section>
+    <section id="orders-view" class="view">
+      <div class="page-head"><span class="eyebrow">MY ORDERS</span><h1>سفارش‌های من</h1><p>وضعیت پرداخت و لینک سرویس‌های آماده را اینجا ببین.</p></div>
+      <div id="orders" class="orders"><div class="skeleton"></div></div>
+    </section>
+    <section id="services-view" class="view">
+      <div class="page-head"><span class="eyebrow">SERVICE DASHBOARD</span><h1>سرویس‌های من</h1><p>حجم باقی‌مانده، اعتبار، اتصال سریع و تمدید را یکجا مدیریت کن.</p></div>
+      <div id="services" class="orders"><div class="skeleton"></div></div>
+      <div class="section-title"><div><small>CONNECTION GUIDE</small><h2>راهنمای اتصال</h2></div></div>
+      <div class="guide-grid">
+        <article class="guide"><b>Android</b><p>Hiddify یا v2rayNG را نصب کن و لینک Subscription را Import کن.</p><a href="https://play.google.com/store/apps/details?id=app.hiddify.com" target="_blank" rel="noopener">Hiddify</a></article>
+        <article class="guide"><b>iOS</b><p>Hiddify یا Streisand را نصب کن، سپس لینک Subscription را اضافه کن.</p><a href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener">Hiddify</a></article>
+        <article class="guide"><b>Windows</b><p>Hiddify Desktop را نصب و Add from clipboard را انتخاب کن.</p><a href="https://github.com/hiddify/hiddify-app/releases" target="_blank" rel="noopener">Download</a></article>
+        <article class="guide"><b>macOS</b><p>Hiddify را نصب کن و لینک Subscription را از کلیپ‌بورد وارد کن.</p><a href="https://apps.apple.com/app/hiddify-proxy-vpn/id6596777532" target="_blank" rel="noopener">App Store</a></article>
+      </div>
+    </section>
+    <section id="support-view" class="view">
+      <div class="page-head"><span class="eyebrow">REAL SUPPORT</span><h1>کنارت هستیم.</h1><p>برای راه‌اندازی، تمدید یا هر سؤال دیگری مستقیم با پشتیبانی گفتگو کن.</p></div>
+      <article class="support-card"><div class="support-icon">⌁</div><h2>پشتیبانی تلگرام</h2><p id="support-id">@support</p><button id="open-support" class="primary">شروع گفتگو</button></article>
+    </section>
+  </main>
+  <nav class="tabbar" aria-label="منوی اصلی">
+    <button class="active" data-tab="store"><i>◇</i><span>فروشگاه</span></button>
+    <button data-tab="orders"><i>▤</i><span>سفارش‌ها</span></button>
+    <button data-tab="services"><i>◈</i><span>سرویس‌ها</span></button>
+    <button data-tab="support"><i>◌</i><span>پشتیبانی</span></button>
+  </nav>
+  <dialog id="checkout"><div class="sheet-grab"></div><button type="button" class="close" aria-label="بستن">×</button><div id="checkout-body"></div></dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>

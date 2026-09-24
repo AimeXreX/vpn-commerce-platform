@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07130f">
+  <title>ProSySVPN — مرکز فرمان</title>
+  <link rel="stylesheet" href="/admin.css"><link rel="stylesheet" href="/admin-premium.css"><link rel="stylesheet" href="/admin-logs.css"><link rel="stylesheet" href="/admin-logs-summary.css"><link rel="stylesheet" href="/admin-bot.css"><script src="/admin.js?v=20260718-5" defer></script><script src="/admin-logs.js" defer></script>
+</head>
+<body>
+  <main id="admin-app">
+    <section class="login-screen">
+      <div class="login-visual"><div class="mesh"></div><div class="login-brand"><span class="logo">P</span><b>ProSyS<span>VPN</span></b></div><div class="login-message"><span class="kicker">PROTECTED CONTROL CENTER</span><h1>مدیریت هوشمند،<br><em>فروش بیشتر.</em></h1><p>همه سفارش‌ها، پرداخت‌ها و سرویس‌ها در یک نمای سریع و امن.</p><div class="secure-pill"><i></i> ارتباط رمزنگاری‌شده</div></div></div>
+      <div class="login-form-wrap"><form id="login-form" class="login-card"><div class="mobile-logo"><span class="logo">P</span><b>ProSyS<span>VPN</span></b></div><span class="kicker">خوش آمدید</span><h2>ورود به مرکز فرمان</h2><p>برای ادامه، اطلاعات مدیر را وارد کنید.</p><label>نام کاربری<div class="input"><span>♙</span><input name="username" autocomplete="username" required autofocus placeholder="admin"></div></label><label>رمز عبور<div class="input"><span>⌁</span><input id="password" type="password" name="password" autocomplete="current-password" required placeholder="••••••••"><button type="button" id="show-password">نمایش</button></div></label><div id="login-error" class="form-error"></div><button class="primary wide" type="submit">ورود امن <span>←</span></button><small>دسترسی فقط برای مدیر مجاز است</small></form></div>
+    </section>
+  </main>
+  <dialog id="order-modal" class="modal"><button class="modal-close" data-close>×</button><div id="order-detail"></div></dialog>
+  <dialog id="plan-modal" class="modal small-modal"><button class="modal-close" data-close>×</button><div id="plan-detail"></div></dialog>
+  <div class="toast" id="toast"><i></i><span></span></div>
+</body></html>
