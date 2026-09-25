@@ -23,14 +23,14 @@ npm test
 npm start
 ```
 
-فایل `.env.example` را مبنا قرار دهید. تنظیمات فعلی وب‌سایت در `.env` کپی شده‌اند؛ برای فعال شدن بات این موارد را به آن اضافه کنید:
+فایل `.env.example` فقط ساختار تنظیمات موردنیاز را نشان می‌دهد و هیچ مقدار عملیاتی یا محرمانه‌ای در مخزن قرار ندارد. آن را با نام `.env` کپی و مقادیر را فقط در محیط محلی یا Secret Manager سرور تنظیم کنید:
 
 ```dotenv
-TELEGRAM_BOT_TOKEN=توکن_دریافتی_از_BotFather
-TELEGRAM_ADMIN_IDS=123456789,987654321
-TELEGRAM_OWNER_IDS=123456789
+TELEGRAM_BOT_TOKEN=
+TELEGRAM_ADMIN_IDS=
+TELEGRAM_OWNER_IDS=
 TELEGRAM_MODE=polling
-TELEGRAM_WEBHOOK_SECRET=یک_رشته_تصادفی_طولانی
+TELEGRAM_WEBHOOK_SECRET=
 ```
 
 در توسعه، `TELEGRAM_MODE=polling` و `APP_URL=http://localhost:3000` کافی است. در سرور نهایی:
